@@ -1,4 +1,4 @@
-mp.game.vehicle.defaultEngineBehaviour = true;
+mp.game.vehicle.defaultEngineBehaviour = false;
 let Player = mp.players.local;
 let Fahrzeug = mp.players.local.vehicle;
 mp.nametags.enabled = true;

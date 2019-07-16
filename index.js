@@ -23,7 +23,6 @@ require('./Menus/stadthalle.js');
 require('./Menus/arbeitsamt.js');
 require('./Menus/kleidung.js');
 require('./Server/Scoreboard/main.js');
-require('./Server/Pferderennen/main.js');
 require('./Server/Sounds/main.js');
 require('./Server/IBerry/main.js');
 require('./Server/Ladebalken/main.js');
