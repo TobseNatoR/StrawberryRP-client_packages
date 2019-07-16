@@ -8,7 +8,6 @@ mp.keys.bind(0x4D, true, function ()
 //Taste Enter
 mp.keys.bind(0x0D, true, function ()
 {
-    if (mp.gui.cursor.visible) return;
     mp.events.callRemote('EnterCheck');
 });
 
@@ -85,7 +84,6 @@ mp.keys.bind(0x4C, true, function ()
 //Taste Y
 mp.events.add('render', () =>
 {
-    if (mp.gui.cursor.visible) return;
     if (mp.keys.isUp(89) === true) 
 	{
         mp.events.callRemote('ScoreboardHiden');
