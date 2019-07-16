@@ -38,6 +38,12 @@ mp.keys.bind(0x77, true, function () {
     mp.events.callRemote('IBerry');
 });
 
+//Taste N
+mp.keys.bind(0x4E, true, function ()
+{
+    mp.events.callRemote('NCheck');
+});
+
 //Taste L
 mp.keys.bind(0x4C, true, function () {
     let localVeh = mp.players.local.vehicle;
