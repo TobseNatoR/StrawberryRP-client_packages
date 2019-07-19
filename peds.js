@@ -8,8 +8,8 @@ let Mannimblumenfeld = mp.peds.new(mp.game.joaat('ig_old_man2'), new mp.Vector3(
 //Ped Animationen
 
 mp.events.add('test', () => {
-	mp.game.streaming.requestAnimDict("switch@michael@sleep_in_car﻿");
-	Mannimblumenfeld.taskPlayAnim("switch@michael@sleep_in_car﻿", "sleep_in_car_michael_facial", 1.0, -1.0, -1, 1, 1, true, true, true);
+    mp.game.streaming.requestAnimDict("anim@mp_player_intmenu@key_fob@﻿");
+    Mannimblumenfeld.taskPlayAnim("anim@mp_player_intmenu@key_fob@﻿", "fob_click", 8.0, 1.0, -1, 1, 1.0, true, true, true);
 });
 
 //Dynamische Bots
