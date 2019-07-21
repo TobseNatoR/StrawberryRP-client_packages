@@ -1,0 +1,284 @@
+body{
+    width: 100%;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 15%;
+}
+
+.topmenu{
+    margin: auto;
+    height: 170px;
+    width: 1000px;
+}
+
+.bottommenu{
+    height: 170px;
+    width: 1000px;
+    margin: auto;
+}
+
+#itemdesc{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 200%;
+}
+
+#int1{
+    border: 1px solid black;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#int1:hover{
+    transform: scale(1.2);
+}
+
+
+#int2{
+    border: 1px solid black;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#int2:hover{
+    transform: scale(1.2);
+}
+
+#int3{
+    border: 1px solid black;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#int3:hover{
+    transform: scale(1.2);
+}
+
+
+#int4{
+    border: 1px solid black;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#int4:hover{
+    transform: scale(1.2);
+}
+
+
+
+#int5{
+    border: 1px solid black;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#int5:hover{
+    transform: scale(1.2);
+}
+
+
+
+#int6{
+    border: 1px solid black;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#int6:hover{
+    transform: scale(1.2);
+}
+
+
+
+#int7{
+    border: 1px solid black;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#int7:hover{
+    transform: scale(1.2);
+}
+
+
+#int8{
+    border: 1px solid black;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#int8:hover{
+    transform: scale(1.2);
+}
+
+
+#int9{
+    border: 1px solid black;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#int9:hover{
+    transform: scale(1.2);
+}
+
+
+#int10{
+    border: 1px solid black;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#int10:hover{
+    transform: scale(1.2);
+}
+
+#int11{
+    border: 1px solid black;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#int11:hover{
+    transform: scale(1.2);
+}
+
+
+#int12{
+    border: 1px solid black;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#int12:hover{
+    transform: scale(1.2);
+}
+
+
+
+#imgint1{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 5px;
+    transform: translateY(30%) translateX(30%);
+}
+
+
+#imgint2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 5px;
+    transform: translateY(30%) translateX(30%);
+}
+
+#imgint3{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 5px;
+    transform: translateY(30%) translateX(30%);
+}
+
+#imgint4{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 5px;
+    transform: translateY(30%) translateX(30%);
+}
+
+#imgint5{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 5px;
+    transform: translateY(30%) translateX(30%);
+}
+
+#imgint6{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 5px;
+    transform: translateY(30%) translateX(30%);
+}
+
+#imgint7{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 5px;
+    transform: translateY(30%) translateX(30%);
+}
+
+#imgint8{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 5px;
+    transform: translateY(30%) translateX(30%);
+}
+
+#imgint9{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 5px;
+    transform: translateY(30%) translateX(30%);
+}
+
+#imgint10{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 5px;
+    transform: translateY(30%) translateX(30%);
+}
+
+#imgint11{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 5px;
+    transform: translateY(30%) translateX(30%);
+}
+
+#imgint12{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    padding: 5px;
+    transform: translateY(30%) translateX(30%);
+}
+
+
+
+
+
