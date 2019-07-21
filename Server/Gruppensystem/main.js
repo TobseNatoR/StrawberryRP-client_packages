@@ -54,19 +54,19 @@ mp.events.add('RangDaten', (Rang5, Rang4, Rang3, Rang2, Rang1) => {
 mp.events.add('gruppenerstellenbrowserschliessen', () => {
     gruppenErstellenBrowser.destroy();
 	mp.gui.cursor.show(false, false);
-	mp.gui.chat.show(true);
+	
 });
 
 mp.events.add('meinegruppierungbrowserschliessen', () => {
     meineGruppierungBrowser.destroy();
 	mp.gui.cursor.show(false, false);
-	mp.gui.chat.show(true);
+	
 });
 
 mp.events.add('invitebrowserschliessen', () => {
     inviteBrowser.destroy();
 	mp.gui.cursor.show(false, false);
-	mp.gui.chat.show(true);
+	
 });
 
 mp.events.add('gruppierungerstellenzumserver', (Gruppenname, Gruppentag, Gruppenfarbe) => {

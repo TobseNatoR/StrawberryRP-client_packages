@@ -11,7 +11,6 @@ function moveFromToAir(player, moveTo, switchType, showGui) {
    switch (moveTo) {
        case 'up':
             if (showGui == false) {
-                mp.gui.chat.show(showGui);
                 gui = 'false';
             };
             mp.game.invoke(Natives.SWITCH_OUT_PLAYER, player.handle, 0, parseInt(switchType));
@@ -34,7 +33,6 @@ function checkCamInAir() {
             checkCamInAir();
         }, 400);
     } else {
-        mp.gui.chat.show(true);
         gui = 'true';
     }
 }

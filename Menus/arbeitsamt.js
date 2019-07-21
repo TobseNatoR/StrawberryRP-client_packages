@@ -12,7 +12,7 @@ const Color = NativeUI.Color;
 const ListItem = NativeUI.ListItem;
 
 mp.gui.cursor.visible = false;
-mp.gui.chat.show(false);
+
 
 const arbeitsamt = new Menu("Arbeitsamt", "Jobs annehmen oder kündigen", new Point(100, 100));
 arbeitsamt.AddItem(new UIMenuItem("Berufskraftfahrer", "Liefere Holz oder Kraftstoff in und außerhalb von Los Santos."));
@@ -31,28 +31,24 @@ arbeitsamt.ItemSelect.on(item => {
 	{
 		if(item.Text == "Schließen")
 		{
-			mp.gui.chat.show(true);
 			arbeitsamt.Close();
 			Player.freezePosition(false);
 		}
 		else if(item.Text == "Kündigen")
 		{
 			mp.events.callRemote('Arbeitsamt_Kündigen');
-			mp.gui.chat.show(true);
 			arbeitsamt.Close();
 			Player.freezePosition(false);
 		}
 		else if(item.Text == "Berufskraftfahrer")
 		{
 			mp.events.callRemote('Arbeitsamt_Berufskraftfahrer');
-			mp.gui.chat.show(true);
 			arbeitsamt.Close();
 			Player.freezePosition(false);
 		}
 		else if(item.Text == "Busfahrer")
 		{
 			mp.events.callRemote('Arbeitsamt_Busfahrer');
-			mp.gui.chat.show(true);
 			arbeitsamt.Close();
 			Player.freezePosition(false);
 		}
@@ -62,5 +58,4 @@ arbeitsamt.ItemSelect.on(item => {
 mp.events.add("Arbeitsamt", () => {
 	arbeitsamt.Open();
 	Player.freezePosition(true);
-	mp.gui.chat.show(false);
 });

@@ -56,7 +56,7 @@ mp.events.add('Unfreeze', () => {
 });
 
 mp.events.add('Chatzeigen', () => {
-	mp.gui.chat.show(true);
+	mp.gui.chat.show(true);	
 });
 
 //Client event 

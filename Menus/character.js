@@ -585,7 +585,7 @@ mp.events.add("toggleCreator", (active, charData) => {
         }
 
         creatorMainMenu.Visible = true;
-        mp.gui.chat.show(false);
+        
         mp.game.ui.displayRadar(false);
         mp.game.ui.displayHud(false);
         localPlayer.clearTasksImmediately();
@@ -594,7 +594,7 @@ mp.events.add("toggleCreator", (active, charData) => {
         mp.game.cam.renderScriptCams(true, false, 0, true, false);
     } else {
         for (let i = 0; i < creatorMenus.length; i++) creatorMenus[i].Visible = false;
-        mp.gui.chat.show(true);
+        
         mp.game.ui.displayRadar(true);
         mp.game.ui.displayHud(true);
         localPlayer.freezePosition(false);

@@ -430,12 +430,12 @@ mp.keys.bind(0x76, false, () => {
     } else {
         
         menuRoupas.Open();
-        mp.gui.chat.show(false);
+        
         mp.gui.cursor.visible = false;
     }
 });
 
 menuRoupas.MenuClose.on(() => {
-    mp.gui.chat.show(true);
+    
     mp.gui.cursor.visible = false;
 });
