@@ -19,8 +19,10 @@ body{
 
 #itemdesc{
     font-family: 'Oswald', sans-serif;
+    color: white;
+    text-shadow: 3px 2px 3px rgba(150, 150, 150, 1);
     text-align: center;
-    font-size: 200%;
+    font-size: 210%;
 }
 
 #int1{
