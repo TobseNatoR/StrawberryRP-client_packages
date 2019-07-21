@@ -1,6 +1,6 @@
 // shitcode will be better in the future
-const NativeUI = require("Nativeui");
-const Data = require("Character/daten");
+const NativeUI = require("Menus/Nativeui");
+const Data = require("Menus/Character/daten");
 
 const Menu = NativeUI.Menu;
 const UIMenuItem = NativeUI.UIMenuItem;

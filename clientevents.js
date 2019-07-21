@@ -19,10 +19,6 @@ mp.events.add('NichtFahrbar', () => {
 	}
 });
 
-mp.events.add('TestDLC', () => {
-	mp.gui.chat.push("DLC: " + mp.game.dlc2.isDlcPresent(mp.game.joaat("mapname1")));
-});
-
 mp.events.add('Fahrbar', () => {
 	let localVeh = mp.players.local.vehicle;
 	if (localVeh) 
