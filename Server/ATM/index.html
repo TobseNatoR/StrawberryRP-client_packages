@@ -13,11 +13,49 @@
     <p>USERNAME, wir begrüßen Sie herzlich bei uns!</p>
     </header>
 
-    <div class="container">
+    <div class="container gv">
         <div class="jumbotron">
             <h6>Gesamt Vermögen:</h6>
             <p id="Money">$$$</p>
         </div>
     </div>
+    <div class="container menu">
+        <div class="jumbotron">
+            <a href="#" class="btn btn-Einzahlen" role="button" onclick="openEinzahlen()">Einzahlen</a>
+            <a href="#" class="btn btn-Auszahlen" role="button" onclick="openAuszahlen()">Auszahlen</a>
+        </div>
+    </div>
+
+
+                                                                                                                    <!-- Toast erhält ein spieler beim Einzahlen-->
+    <div class="form-toast" id="ToastForm">
+        <form action="#" class="form-container toast"></form>
+            <div class="toast" role="alert" class="toast einzahlen" data-delay="500" aria-live="assertive" aria-atomic="true>
+                <div class="toast-header">
+                    <img src="..." alt="..." class="rounded mr-2">
+                    <strong class="mr-auto">Flecca Bank</strong>
+                </div>
+                <div class="toast-body">
+                    Du hast gerade <div id="Einzahlung"> $</div> eingezahlt!
+                </div>
+            </div>
+    </div>
+
+                                                                                                                    <!-- Einzahlen Form (Popup)-->
+
+    <div class="form-popup" id="EinzahlenForm">
+        <form action="#" class="form-container">
+            <h1>Login</h1>
+
+            <label for="Betrag"><b>betrag</b></label>
+            <input type="text" placeholder="Gebe den Betrag an" name="EinzhlBetrag">
+
+            <button type="submit" class="btn" onclick="TriggerToast()">Einzahlen</button>
+            <button type="submit" class="btn cancel" onclick="closeEinzahlen()"></button>
+        </form>
+    </div>
+
+
+    <script src="app.js"></script>
 </body>
 </html>

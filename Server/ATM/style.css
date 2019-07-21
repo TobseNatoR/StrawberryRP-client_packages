@@ -1,14 +1,97 @@
-header{
+header {
     text-align: center;
 }
 
-.container{
+.container.gv {
     text-align: center;
-    margin-top: 30vw;
+    margin-top: 2.5%;
+    margin-left: 2.55;
     display: inline-block;
-    border: 1px solid black;
+    width: 45%;
+}
+
+.container.menu {
+    text-align: center;
+    margin-left: 2.5%;
+    display: inline-grid;
+    width: 45%;
 }
 
 .jumbotron {
     text-align: center;
+}
+
+/* Button zum öffnen der Einzahlen Form - fixed am Fuße der Website */
+
+.form-toast {
+    display: none;
+}
+
+/* Die PopupForm- hidden by default */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* styles toast form*/
+
+.toast-body {
+    max-width: auto;
+    padding: 10px;
+    background-color: darkolivegreen; 
+}
+
+/* styles form container */
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Wenn die Input Felder focus erhalten, do smth*/
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* style submit/login button */
+
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* cancel button */
+
+.form-container .cancel {
+    background-color: red;
+}
+
+/* hover buttons */
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
 }
