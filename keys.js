@@ -1,3 +1,5 @@
+//Globals
+
 //Taste M
 mp.keys.bind(0x4D, true, function ()
 {
@@ -81,9 +83,10 @@ mp.keys.bind(0x4C, true, function ()
 	}
 });
 
-//Taste Y
+//Keys halten
 mp.events.add('render', () =>
 {
+	//Y
     if (mp.keys.isUp(89) === true) 
 	{
         mp.events.callRemote('ScoreboardHiden');
@@ -93,15 +96,27 @@ mp.events.add('render', () =>
         mp.events.callRemote('ScoreboardZeigen');
     }
 	
+	//X
+	if (mp.keys.isUp(88) === true) 
+	{
+        mp.events.callRemote('InteraktionsMenuHiden');
+    } 
+	else 
+	{
+        mp.events.callRemote('InteraktionsMenuZeigen');
+    }
+	
+	//Arrow Down
 	if (mp.keys.isDown(40) === true) 
 	{
         mp.events.callRemote('ScoreboardDown');
     } 
-	
+	//Arrow UP
 	if (mp.keys.isDown(38) === true) 
 	{
         mp.events.callRemote('ScoreboardUp');
     } 
 	
 });
+
 
