@@ -261,3 +261,5 @@ __pycache__/
 *.pyc
 _git2_a11960
 .vscode/settings.json
+
+\.vscode/
