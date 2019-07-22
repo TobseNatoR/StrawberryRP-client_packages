@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <title>ATM</title>
 </head>
+
 <body>
     <header>
-    <h3>Flecca Bank</h3>
-    <p>USERNAME, wir begrüßen Sie herzlich bei uns!</p>
+        <h3>Flecca Bank</h3>
+        <p>USERNAME, wir begrüßen Sie herzlich bei uns!</p>
     </header>
 
     <div class="container gv">
@@ -20,32 +22,53 @@
         </div>
     </div>
     <div class="container menu">
-        <div class="jumbotron">
-            <a href="#" class="btn btn-Einzahlen" role="button" onclick="openEinzahlen()">Einzahlen</a>
-            <a href="#" class="btn btn-Auszahlen" role="button" onclick="openAuszahlen()">Auszahlen</a>
+        <div class="jumbotron einzhlbtn">
+            <div class="container Einzhlbtn">
+                <a href="#" class="btn btn-Einzahlen" role="button" onclick="openEinzahlen()">Einzahlen</a>
+            </div>
+        </div>
+        <div class="jumbotron auszhlbtn">
+            <div class="container Auszhlbtn">
+                <a href="#" class="btn btn-Auszahlen" role="button" onclick="openAuszahlen()">Auszahlen</a>
+            </div>
         </div>
     </div>
 
 
-                                                                                                                    <!-- Toast erhält ein spieler beim Einzahlen-->
+    <!-- Toast erhält ein spieler beim Einzahlen-->
     <div class="form-toast" id="ToastForm">
         <form action="#" class="form-container toast"></form>
-            <div class="toast" role="alert" class="toast einzahlen" data-delay="500" aria-live="assertive" aria-atomic="true>
-                <div class="toast-header">
-                    <img src="..." alt="..." class="rounded mr-2">
-                    <strong class="mr-auto">Flecca Bank</strong>
-                </div>
-                <div class="toast-body">
-                    Du hast gerade <div id="Einzahlung"> $</div> eingezahlt!
-                </div>
-            </div>
+        <div class="toast" role="alert" class="toast einzahlen" data-delay="5000" aria-live="assertive" aria-atomic="true>
+                <div class=" toast-header">
+            <img src="..." alt="..." class="rounded mr-2">
+            <strong class="mr-auto">Flecca Bank</strong>
+        </div>
+        <div class="toast-body">
+            Du hast gerade <div id="Einzahlung"> $</div> eingezahlt!
+        </div>
+    </div>
     </div>
 
-                                                                                                                    <!-- Einzahlen Form (Popup)-->
+    <!-- Tost erhälten beim Auzahlen -->
+
+    <div class="form-toast" id="ToastForm2">
+        <form action="#" class="form-container toast"></form>
+        <div class="toast" role="alert" class="toast auszahlen" data-delay="5000" aria-live="assertive" aria-atomic="true>
+                        <div class=" toast-header">
+            <img src="..." alt="..." class="rounded mr-2">
+            <strong class="mr-auto">Flecca Bank</strong>
+        </div>
+        <div class="toast-body">
+            Du hast gerade <div id="Auszahlung"> $</div> ausgezahlt!
+        </div>
+    </div>
+    </div>
+
+    <!-- Einzahlen Form (Popup)-->
 
     <div class="form-popup" id="EinzahlenForm">
         <form action="#" class="form-container">
-            <h1>Login</h1>
+            <h1>Einzahlen</h1>
 
             <label for="Betrag"><b>betrag</b></label>
             <input type="text" placeholder="Gebe den Betrag an" name="EinzhlBetrag">
@@ -55,7 +78,24 @@
         </form>
     </div>
 
+    <!-- Auszahl Form -->
+
+    <div class="form-pupup" id="AuszahlenForm">
+        <form action="#" class="form-container">
+            <h1>Auszahlen</h1>
+
+            <label for="Betrag"><b>betrag</b></label>
+            <input type="text" placeholder="Gebe den Betrag zum auszahlen an" name="AuszhlBetrag">
+
+            <button type="submit" class="btn" onclick="TriggerToast2()">Auszahlen</button>
+            <button type="submit" class="btn cancle" onclick="closeAuszahlen()"></button>
+        </form>
+    </div>
+
+
+
 
     <script src="app.js"></script>
 </body>
+
 </html>
