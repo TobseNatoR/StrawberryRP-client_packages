@@ -5,15 +5,28 @@ header {
     bottom: -102px !important;
 }
 
+div#background {
+    position: relative;
+    background-color: #ea362a6b;
+    padding-top: 75px;
+    top: 159px !important;
+    margin-bottom: 0px;
+    padding-bottom: 280px;
+    margin-left: 25px;
+    padding-right: 30px;
+    margin-right: 120px;
+
+}
+
 .container.gv {
     text-align: center;
     margin-top: 2.5%;
     margin-left: 2.55%;
     display: block;
     width: 45%;
-    position: relative;
+    position: absolute;
     bottom: -239px !important;
-    "
+    top: 295px;
 
 }
 
@@ -22,11 +35,10 @@ header {
     margin-left: 2.5%;
     display: block;
     width: 45%;
-    position: relative;
-    right: 0px;
-    margin-right: 0px;
-    left: 518px !important;
-    top: -50px;
+    position: absolute;
+    right: 123px !important;
+    margin-top: 0px;
+    top: 260px !important;
 }
 
 .jumbotron {
@@ -34,7 +46,6 @@ header {
 }
 
 /* container » Jumbotron » Button */
-
 
 
 

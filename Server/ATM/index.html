@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>ATM</title>
 </head>
@@ -13,28 +12,27 @@
 <body>
     <header>
         <h3>Flecca Bank</h3>
-        <p>USERNAME, wir begrüßen Sie herzlich bei uns!</p>
+        <p><div id="UserNAME"></div>, wir begrüßen Sie herzlich bei uns!</p>
     </header>
-
+    <div class="jumbotron" id="background"></div>
     <div class="container gv">
         <div class="jumbotron">
             <h6>Gesamt Vermögen:</h6>
-            <p id="Money">$$$</p>
+            <p><div id="UserMONEY"></div>$</p>
         </div>
     </div>
-    <div class="container menu">
-        <div class="jumbotron einzhlbtn">
-            <div class="container Einzhlbtn">
-                <a href="#" class="btn btn-Einzahlen" role="button" onclick="openEinzahlen()">Einzahlen</a>
+        <div class="container menu">
+            <div class="jumbotron einzhlbtn">
+                <div class="container Einzhlbtn">
+                    <a href="#" class="btn btn-Einzahlen" role="button" onclick="openEinzahlen()">Einzahlen</a>
+                </div>
+            </div>
+            <div class="jumbotron auszhlbtn">
+                <div class="container Auszhlbtn">
+                    <a href="#" class="btn btn-Auszahlen" role="button" onclick="openAuszahlen()">Auszahlen</a>
+                </div>
             </div>
         </div>
-        <div class="jumbotron auszhlbtn">
-            <div class="container Auszhlbtn">
-                <a href="#" class="btn btn-Auszahlen" role="button" onclick="openAuszahlen()">Auszahlen</a>
-            </div>
-        </div>
-    </div>
-
 
     <!-- Toast erhält ein spieler beim Einzahlen-->
     <div class="form-toast" id="ToastForm">
