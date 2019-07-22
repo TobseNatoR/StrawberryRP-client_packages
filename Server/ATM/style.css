@@ -1,25 +1,53 @@
 header {
     text-align: center;
+    position: relative;
+    margin-bottom: 25px !important;
+    bottom: -102px !important;
 }
 
 .container.gv {
     text-align: center;
     margin-top: 2.5%;
-    margin-left: 2.55;
-    display: inline-block;
+    margin-left: 2.55%;
+    display: block;
     width: 45%;
+    position: relative;
+    bottom: -239px !important;
+    "
+
 }
 
 .container.menu {
     text-align: center;
     margin-left: 2.5%;
-    display: inline-grid;
+    display: block;
     width: 45%;
+    position: relative;
+    right: 0px;
+    margin-right: 0px;
+    left: 518px !important;
+    top: -50px;
 }
 
 .jumbotron {
     text-align: center;
 }
+
+/* container » Jumbotron » Button */
+
+
+
+
+
+div.container.Einzhlbtn {
+    display: inline-block;
+    color: #333;
+    bottom: 4%;
+}
+
+
+
+
 
 /* Button zum öffnen der Einzahlen Form - fixed am Fuße der Website */
 
@@ -27,9 +55,27 @@ header {
     display: none;
 }
 
-/* Die PopupForm- hidden by default */
+
+#FormToast2 {
+    display: none;
+}
+
+#FormToast {
+    display: none;
+}
+
+/* Die PopupForm - hidden by default */
 
 .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+#AuszahlenForm {
     display: none;
     position: fixed;
     bottom: 0;
@@ -43,7 +89,7 @@ header {
 .toast-body {
     max-width: auto;
     padding: 10px;
-    background-color: darkolivegreen; 
+    background-color: darkolivegreen;
 }
 
 /* styles form container */
@@ -56,7 +102,8 @@ header {
 
 /* Full-width input fields */
 
-.form-container input[type=text], .form-container input[type=password] {
+.form-container input[type=text],
+.form-container input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -66,7 +113,8 @@ header {
 
 /* Wenn die Input Felder focus erhalten, do smth*/
 
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
@@ -92,6 +140,7 @@ header {
 
 /* hover buttons */
 
-.form-container .btn:hover, .open-button:hover {
+.form-container .btn:hover,
+.open-button:hover {
     opacity: 1;
 }
