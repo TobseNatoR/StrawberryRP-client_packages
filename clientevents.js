@@ -71,7 +71,6 @@ mp.events.add('Navigation', (posX, posY) => {
     mp.game.ui.setNewWaypoint(posX, posY);
 });
 
-
 mp.events.add('WantedLevel', (Anzahl) => {
     mp.game.gameplay.setFakeWantedLevel(Anzahl);
 });
