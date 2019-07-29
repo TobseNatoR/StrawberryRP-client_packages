@@ -15,104 +15,120 @@
 <header>
 <h2>Flecca Bank</h2>
 </header>
+<div class="wrapper">
+    <div class="welcome">
+        <h6>Herzlich Wilkommen <div class="UsrNm" id="UserNAME"></div></h6>
+    </div>
 
-<div class="welcome">
-    <h6>Herzlich Wilkommen <div class="UsrNm" id="UserNAME"></div></h6>
-</div>
-
-<div class="buttons">
-    <div class="container einzhlbtn" id="ein">
-        <a href="#" class="btn btn-Einzahlen" role="button" onclick="openEinzahlen()">Einzahlen</a>
-        <form action="#" class="form-toast" id="EinzahlToast">
-            <div class="d-flex justify-content-center align-items-center hidden">
-                <div class="toast einzahlen" role="alert" data-delay="500">
-                    <div class="toast-header">
-                        <img src="..." alt="..." class="rounded mr-2">
-                        <strong class="mr-auto">Flecca Bank</strong>
+    <div class="buttons">
+        <div class="container einzhlbtn" id="ein">
+            <a href="#" class="btn btn-Einzahlen" role="button" onclick="openEinzahlen()">Einzahlen</a>
+            <form action="#" class="form-toast" id="EinzahlToast">
+                <div class="d-flex justify-content-center align-items-center hidden">
+                    <div class="toast einzahlen" role="alert" data-delay="500">
+                        <div class="toast-header">
+                            <img src="..." alt="..." class="rounded mr-2">
+                            <strong class="mr-auto">Flecca Bank</strong>
+                        </div>
+                        <div class="toast-body">
+                            Du hast soeben <div id="einzahlung" class="einzahlung"></div> $ eingezahlt
+                        </div>
                     </div>
-                    <div class="toast-body">
-                        Du hast soeben <div id="einzahlung" class="einzahlung"></div> $ eingezahlt
+                </div>    
+            </form>
+        </div>
+        <div class="container auszhlbtn" id="aus">
+            <a href="#" class="btn btn-Auszahlen" role="button" onclick="openAuszahlen()">Auszahlen</a>
+            <form action="#" class="form-toast" id="AusahlToast">
+                <div class="d-flex justify-content-center align-items-center";">
+                    <div class="toast auszahlen" role="alert" data-delay="500">
+                        <div class="toast-header">
+                            <img src="..." alt="..." class="rounded mr-2">
+                            <strong class="mr-auto">Flecca Bank</strong>
+                        </div>
+                        <div class="toast-body">
+                            Du hast soeben <div id="auszahlung" class="auszahlen"></div> $ ausgezahlt
+                        </div>
                     </div>
                 </div>
-            </div>    
-        </form>
-    </div>
-    <div class="container auszhlbtn" id="aus">
-        <a href="#" class="btn btn-Auszahlen" role="button" onclick="openAuszahlen()">Auszahlen</a>
-        <form action="#" class="form-toast" id="AusahlToast">
-            <div class="d-flex justify-content-center align-items-center";">
-                <div class="toast auszahlen" role="alert" data-delay="500">
-                    <div class="toast-header">
-                        <img src="..." alt="..." class="rounded mr-2">
-                        <strong class="mr-auto">Flecca Bank</strong>
+            </form>
+        </div>
+        <div class="container transbtn" id="trans">
+            <a href="#" class="btn btn-trans" role="button" onclick="openTrans()">Transactionen</a>
+            <form action="#" class="form-toast" id="TransToast">
+                <div class="d-flex justify-content-center align-items-center" ;">
+                    <div class="toast trans" role="alert" data-delay="500">
+                        <div class="toast-header">
+                            <img src="..." alt="..." class="rounded mr-2">
+                            <strong class="mr-auto">Flecca Bank</strong>
+                        </div>
+                        <div class="toast-body">
+                            kommt
+                        </div>
                     </div>
-                    <div class="toast-body">
-                        Du hast soeben <div id="auszahlung" class="auszahlen"></div> $ ausgezahlt
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="stand">
+        <div class="container standbg">
+            <div class="row">
+                <div class="col-md-12" id="col1">
+                    <div id="PName">
+                        Name: <div id="Nickname"></div>
+                    </div>
+                    <div id="Knr">
+                        Kntnr: <div id="Kontonummer"></div>
                     </div>
                 </div>
             </div>
-        </form>
-    </div>
-    <div class="container transbtn" id="trans">
-        <a href="#" class="btn btn-trans" role="button" onclick="openTrans()">Transactionen</a>
-        <form action="#" class="form-toast" id="TransToast">
-            <div class="d-flex justify-content-center align-items-center" ;">
-                <div class="toast trans" role="alert" data-delay="500">
-                    <div class="toast-header">
-                        <img src="..." alt="..." class="rounded mr-2">
-                        <strong class="mr-auto">Flecca Bank</strong>
-                    </div>
-                    <div class="toast-body">
-                        kommt
+            <div class="row">
+                <div class="col" id="col2">
+                    <h9>Vermögen :</h9>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-6" id="moneycol">
+                            <p id="Vermögen">$$$</p>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </form>
-    </div>
-</div>
+            <div class="row">
+                <div class="col" id="bigblock">
 
-<div class="stand">
-    <div class="container standbg">
-        <div class="row">
-            <div class="col-md-12" id="col1">
-                <div id="PName">
-                    Name: <div id="Nickname"></div>
-                </div>
-                <div id="Knr">
-                    Kntnr: <div id="Kontonummer"></div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col" id="col2">
-                <h9>Vermögen :</h9>
-                <div class="row">
-                    <div class="col-md-6 offset-md-6" id="moneycol">
-                        <p id="Vermögen">$$$</p>
+    </div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col" id="bigblock">
 
-            </div>
-        </div>
+    <div class="table hidden" id="transtbl">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Betreff</th>
+                <th scope="col">Absender</th>
+                <th scope="col">Betrag</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+            </tr>
+        </tbody>
+    </div>
+
+    <div class="form-popup hidden" id="EinzhlForm">
+        <form action="#" class="form-container">
+            <h1>Einzahlen</h1>
+            <label for="Betrag">Betrag</label>
+            <input type="text" placeholder="Gebe den Betrag an" name="einzhlbtg">
+            <button type="submit" class="btn" onclick="TriggerEinToast()">Einzahlen</button>
+            <button type="submit" class="btn cancle" onclick="closeEinzahlen()"></button>
+        </form>
     </div>
 </div>
-
-
-<div class="form-popup hidden" id="EinzhlForm">
-    <form action="#" class="form-fontainer">
-        <h1>Einzahlen</h1>
-        <label for="Betrag">Betrag</label>
-        <input type="text" placeholder="Gebe den Betrag an" name="einzhlbtg">
-        <button type="submit" class="btn" onclick="TriggerEinToast()">Einzahlen</button>
-        <button type="submit" class="btn cancle" onclick="closeEinzahlen()"></button>
-    </form>
-</div>
-
 
 
 
