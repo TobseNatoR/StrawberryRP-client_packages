@@ -47,11 +47,11 @@ function getid(obj)
 			selected = 4;
 			break;
 		case "int5":
-			text = "Test";
+			text = "Noch nicht belegt";
 			selected = 5;
 			break;
 		case "int6":
-			text = "Motor";
+			text = "Noch nicht belegt";
 			selected = 6;
 			break;
 		case "int7":
@@ -71,25 +71,20 @@ function getid(obj)
 			selected = 10;
 			break;
 		case "int11":
-			text = "Test";
+			text = "Noch nicht belegt";
 			selected = 11;
 			break;
 		case "int12":
-			text = "Test";
+			text = "Noch nicht belegt";
 			selected = 12;
 			break;
 		default:
-			text = "Bla"
+			text = "Unbekannt"
+			selected = 0;
 			break;
 		
 	}
+
+	mp.trigger('selectedzumserver', selected);
 	document.getElementById("itemdesc").innerHTML = text;
-}
-
-function encode_utf8(s) {
-  return unescape(encodeURIComponent(s));
-}
-
-function decode_utf8(s) {
-  return decodeURIComponent(escape(s));
 }
