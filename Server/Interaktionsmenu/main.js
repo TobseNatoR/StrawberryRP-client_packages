@@ -20,4 +20,8 @@ mp.events.add('interaktionsmenudatenabfragen', () => {
     mp.events.callRemote('InteraktionsMenuDaten', selected);
 });
 
+mp.events.add('interaktionsmenutyp', (Typ) => {
+    interaktionsmenu.execute(`Art(${Typ})`);
+});
+
 
