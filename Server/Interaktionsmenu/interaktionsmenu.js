@@ -21,6 +21,12 @@ function Art(Id)
 	}
 }
 
+function remid() 
+{
+	mp.trigger('selectedzumserver', 0);
+	document.getElementById("itemdesc").innerHTML = unescape("Kein Item gew%E4hlt");
+}
+
 function getid(obj) 
 {
 	let text = null;
