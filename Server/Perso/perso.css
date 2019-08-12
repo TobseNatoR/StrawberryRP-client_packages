@@ -11,7 +11,7 @@ body
   margin-top: 40%;
   padding: 25px 20px 15px 20px;
   border: 2px solid black;
-  background-image: url(https://filebase.strawberry-rp.de/server/img/perso_bg.png);
+  background-image: url(perso_bg.png);
   background-size: 450px 239px;
 }
 
