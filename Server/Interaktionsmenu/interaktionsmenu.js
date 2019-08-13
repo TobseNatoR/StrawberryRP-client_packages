@@ -91,6 +91,6 @@ function getid(obj)
 		
 	}
 
-	mp.trigger('selectedzumserver', selected);
+	//mp.trigger('selectedzumserver', selected);
 	document.getElementById("itemdesc").innerHTML = text;
 }
