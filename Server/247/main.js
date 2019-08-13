@@ -33,7 +33,8 @@ mp.events.add('Items_Eintragen', (Id, Name, Preis, IMG) => {
 
 function Eintragen(Id, Name, Preis, IMG) 
 {
-	mein247Browser.execute(`tabelle = document.getElementById('gruppentabelle').getElementsByTagName('tbody')[0];`);
+	mp.gui.chat.push("Link: " + IMG);
+	mein247Browser.execute(`tabelle = document.getElementById('247tabelle').getElementsByTagName('tbody')[0];`);
 	mein247Browser.execute(`eintrag = tabelle.insertRow(tabelle.rows.length);`);
 	mein247Browser.execute(`zelle1 =  eintrag.insertCell(0);`);
 	mein247Browser.execute(`zelle2 =  eintrag.insertCell(1);`);
@@ -41,9 +42,7 @@ function Eintragen(Id, Name, Preis, IMG)
 	mein247Browser.execute(`zelle4 = eintrag.insertCell(3);`);
 
 	mein247Browser.execute(`inhalt1 = document.createElement('img');`);
-	mein247Browser.execute(`inhalt1.src = ${IMG};`);
-	mein247Browser.execute(`inhalt1.height = auto;`);
-	mein247Browser.execute(`inhalt1.width = auto;`);
+	mein247Browser.execute(`inhalt1.src = '${IMG}';`);
 	
 	mein247Browser.execute(`inhalt2 = document.createTextNode('${Name}');`);
 	mein247Browser.execute(`inhalt3 = document.createTextNode('${Preis}');`);
