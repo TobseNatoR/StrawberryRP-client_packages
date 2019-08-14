@@ -1,3 +1,3 @@
 $('#247schliessen').click(() => {
-    //mp.trigger('247browserschliessen');
+    mp.trigger('247browserschliessen');
 });
