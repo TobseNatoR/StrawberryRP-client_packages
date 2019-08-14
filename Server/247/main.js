@@ -28,7 +28,7 @@ mp.events.add('247browserschliessen', () => {
 });
 
 mp.events.add('ItemKaufen', (Id) => {
-	mp.events.callRemote('247ItemKaufen', Id);
+	mp.events.callRemote('ItemKaufen247', Id);
 });
 
 mp.events.add('Items_Eintragen', (Id, Name, Preis, IMG) => {
