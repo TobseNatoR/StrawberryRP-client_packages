@@ -27,13 +27,16 @@ mp.events.add('247browserschliessen', () => {
 	
 });
 
+mp.events.add('ItemKaufen', (Id) => {
+	mp.events.callRemote('247ItemKaufen', Id);
+});
+
 mp.events.add('Items_Eintragen', (Id, Name, Preis, IMG) => {
 	Eintragen(Id, Name, Preis, IMG);
 });
 
 function Eintragen(Id, Name, Preis, IMG) 
 {
-	mp.gui.chat.push("Link: " + IMG);
 	mein247Browser.execute(`tabelle = document.getElementById('247tabelle').getElementsByTagName('tbody')[0];`);
 	mein247Browser.execute(`eintrag = tabelle.insertRow(tabelle.rows.length);`);
 	mein247Browser.execute(`zelle1 =  eintrag.insertCell(0);`);
