@@ -26,6 +26,7 @@
 div.tab-content {
   max-height: 40%;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .jumbotron {
