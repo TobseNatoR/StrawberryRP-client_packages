@@ -10,14 +10,14 @@
 </head>
 <body>
     <div class="main">
-        <div class="item1">
+        <div id="meinitem" class="item1" onmouseover="mouseonItem();" onmouseout="mouseoutofItem();" onclick="itemCheck(this);">
             <figure>
             <img src="./img/img1.png" alt="debug_1">
             <figcaption>
             <p id="item-desc-1" class="item-desc-1">Apfel</p>
             </figcaption>
         </div>
-        <div class="item2">
+        <div id="meinitem1" class="item1" onmouseover="mouseonItem();" onmouseout="mouseoutofItem();" onclick="itemCheck(this);">
             <figure>
             <img src="./img/img1.png" alt="Bild von Item1 aka Testbild ein Apfel">
             <figcaption>
@@ -26,14 +26,17 @@
         </div>
     </div>
 
-    <div class="button-group">
-        <button class="button-group-accept">
+    <div class="button-group" id="buttons" style="display: none;">
+        <button id="benutzen" class="button-group-accept">
         Benutzen
         </button>
-        <button class="button-group-decline">
+        <button id="wegwerfen" class="button-group-decline">
         Wegwerfen
+        </button>
+		<button onclick"itemloslassen()" id="loslassen" class="button-group-uncheck">
+        Loslassen 
         </button>
     </div>
 </body>
-
+<script src="inventar.js" charset="UTF-8" type="text/javascript"></script>
 </html>

@@ -1,3 +1,19 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #990; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 body{
     background-color: #fff;
     width: 100%;
@@ -20,12 +36,9 @@ body{
     font-size: 12px;
     text-align: center;
 }
-
 .button-group-accept:hover{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-
-
 
 .button-group-decline{
     color: #fff;
@@ -40,6 +53,18 @@ body{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+.button-group-uncheck{
+    color: #fff;
+    border: none;
+    background-color: orange;
+    width: 200px;
+    height: 50px;
+    font-size: 12px;
+    text-align: center;
+}
+.button-group-uncheck:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
 
 .main{
     margin: auto;
@@ -47,7 +72,10 @@ body{
     height: 20em;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     display: flex;
+	flex-wrap: wrap;
     align-items: center;
+	max-height: 40%;
+	overflow: scroll;
 }
 
 .item1{
