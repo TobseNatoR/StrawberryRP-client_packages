@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,21 +10,9 @@
     <title>Itemmenu</title>
 </head>
 <body>
-    <div class="main">
-        <div id="meinitem" class="item1" onmouseover="mouseonItem();" onmouseout="mouseoutofItem();" onclick="itemCheck(this);">
-            <figure>
-            <img src="./img/img1.png" alt="debug_1">
-            <figcaption>
-            <p id="item-desc-1" class="item-desc-1">Apfel</p>
-            </figcaption>
-        </div>
-        <div id="meinitem1" class="item1" onmouseover="mouseonItem();" onmouseout="mouseoutofItem();" onclick="itemCheck(this);">
-            <figure>
-            <img src="./img/img1.png" alt="Bild von Item1 aka Testbild ein Apfel">
-            <figcaption>
-            <p id="item-desc-2" class="item-desc-1">Birne</p>
-            </figcaption>
-        </div>
+	<a href="#" id="inventarschliessen" style="text-decoration: none; color: #fff; float: right; font-weight: bold;">X</a>
+    <div id="inventarmenu" class="main">
+        
     </div>
 
     <div class="button-group" id="buttons" style="display: none;">

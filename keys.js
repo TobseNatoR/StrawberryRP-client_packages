@@ -27,6 +27,13 @@ mp.keys.bind(0x4B, true, function ()
     mp.events.callRemote('KCheck');
 });
 
+//Taste I
+mp.keys.bind(0x49, true, function ()
+{
+    if (mp.gui.cursor.visible) return;
+    mp.events.callRemote('ICheck');
+});
+
 //Taste B
 mp.keys.bind(0x42, true, function ()
 {

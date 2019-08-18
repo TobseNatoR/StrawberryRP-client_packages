@@ -1,6 +1,14 @@
 //Globals
 var itemClicked = 0;
 var itemClickedID = 0;
+var inventar;
+var item;
+var bild;
+var p;
+
+$('#inventarschliessen').click(() => {
+    mp.trigger('inventarschliessen');
+});
 
 //Event listener
 document.getElementById("loslassen").addEventListener("click", itemloslassen);
@@ -21,6 +29,28 @@ function itemCheck(obj)
 		var x = document.getElementById("buttons");
 		x.style.display = "block";
 	}
+}
+
+function itemAdden(Id, Name, IMG)
+{
+	inventar = document.getElementById('inventarmenu');
+
+	item = document.createElement('div');
+	item.setAttribute('class', 'item1');
+	item.setAttribute('id', Id);
+	item.setAttribute('onclick', 'itemCheck(this);');
+
+	bild = document.createElement('img');
+	bild.setAttribute('src', IMG);
+
+	p = document.createElement('p');
+	p.setAttribute('class', 'item-desc-1');
+	p.innerHTML = `<center>${Name}</center>`;
+
+	item.appendChild(bild);
+	item.appendChild(p);
+
+	inventar.appendChild(item);
 }
 
 function itemloslassen()

@@ -7,7 +7,7 @@
 }
  
 ::-webkit-scrollbar-thumb {
-  background: #990; 
+  background: #888; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -15,7 +15,6 @@
 }
 
 body{
-    background-color: #fff;
     width: 100%;
     margin-left: auto; 
     margin-right: auto;
@@ -67,6 +66,7 @@ body{
 }
 
 .main{
+	background-color: #fff;
     margin: auto;
     width: 60em;
     height: 20em;
@@ -91,6 +91,9 @@ img{
     max-width: 100%;
     width: 50px;
     height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: inherit;
 }
 
 figcaption{

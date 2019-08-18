@@ -35,6 +35,7 @@ require('./Server/Gruppensystem/main.js');
 require('./Server/247/main.js');
 require('./Server/Busfahrer_Anzeige/main.js');
 require('./Server/Interaktionsmenu/main.js');
+require('./Server/Inventar/main.js');
 
 
 
